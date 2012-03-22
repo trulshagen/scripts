@@ -11,7 +11,9 @@ curl
 ubuntu-restricted-extras
 vlc
 mplayer
-gnome-tweak-tool"
+gnome-tweak-tool
+nautilus-open-terminal
+terminator"
 
 sudo apt-get install ${packages}
 
