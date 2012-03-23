@@ -24,7 +24,10 @@ gconftool-2 --set "/apps/metacity/general/button_layout" \
 gconftool-2 --set "/desktop/gnome/sound/event_sounds" \
     --type boolean "false"
 
-# gnome-terminal: no menubar, no scrollbar
+# gnome-terminal: no scrollbar
 gconftool-2 --set "/apps/gnome-terminal/profiles/Default/scrollbar_position" \
     --type string "hidden"
+
+# terminator as default terminal 
+gconftool --type string --set /desktop/gnome/applications/terminal/exec terminator
 
