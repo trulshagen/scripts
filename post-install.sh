@@ -13,7 +13,11 @@ vlc
 mplayer
 gnome-tweak-tool
 nautilus-open-terminal
-terminator"
+terminator
+wireshark
+htop
+slurm
+irssi"
 
 sudo apt-get install ${packages}
 
