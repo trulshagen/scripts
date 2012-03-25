@@ -1,6 +1,7 @@
 sudo apt-get update
 
 packages="build-essential
+screen
 manpages-dev
 php5-cli
 python-scapy
