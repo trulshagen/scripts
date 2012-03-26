@@ -1,6 +1,7 @@
 sudo apt-get update
 
 packages="build-essential
+apcalc
 screen
 manpages-dev
 php5-cli
