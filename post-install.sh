@@ -9,6 +9,7 @@ subversion
 git-core
 network-manager-vpnc
 curl
+lynx
 ubuntu-restricted-extras
 vlc
 mplayer
