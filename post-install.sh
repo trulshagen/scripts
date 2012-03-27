@@ -1,6 +1,8 @@
 sudo apt-get update
 
 packages="build-essential
+clamav-freshclam
+clamav
 apcalc
 screen
 manpages-dev
