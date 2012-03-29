@@ -1,6 +1,7 @@
 sudo apt-get update
 
 packages="build-essential
+nmap
 clamav-freshclam
 clamav
 apcalc
@@ -14,6 +15,7 @@ network-manager-vpnc
 curl
 lynx
 ubuntu-restricted-extras
+flashplugin-nonfree
 vlc
 mplayer
 vlc
