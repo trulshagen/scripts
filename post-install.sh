@@ -1,6 +1,7 @@
 sudo apt-get update
 
 packages="build-essential
+zenmap
 nmap
 clamav-freshclam
 clamav
