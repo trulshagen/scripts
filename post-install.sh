@@ -1,6 +1,13 @@
+#!/bin/bash
+echo "Adding repository for Spotify"
+echo "deb http://repository.spotify.com stable non-free" | sudo tee -a /etc/apt/sources.list > /dev/null
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4E9CFF4E
+
+
 sudo apt-get update
 
 packages="build-essential
+bless
 zenmap
 nmap
 clamav-freshclam
@@ -60,3 +67,5 @@ gconftool --type string --set /desktop/gnome/applications/terminal/exec terminat
 # Adding ~/bin to $PATH
 echo "Setting $PATH"
 export PATH=$PATH:/home/truls/bin
+
+
