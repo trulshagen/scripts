@@ -36,7 +36,8 @@ wireshark
 htop
 dstat
 slurm
-irssi"
+irssi
+spotify-client-qt"
 
 echo "#### Installing packages ####"
 sudo apt-get install ${packages}
