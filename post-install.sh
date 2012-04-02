@@ -66,6 +66,9 @@ gconftool-2 --set "/apps/gnome-terminal/profiles/Default/scrollbar_position" \
 echo "#### Setting Terminator as default terminal ####"
 gconftool --type string --set /desktop/gnome/applications/terminal/exec terminator
 
+echo "#### Setting default editor ###"
+sudo update-alternatives --config editor
+
 # Adding ~/bin to $PATH
 echo "#### Setting "$PATH" ####"
 export PATH=$PATH:/home/truls/bin
