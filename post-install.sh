@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Adding repository for Spotify"
+echo "#### Adding repository for Spotify ####"
 echo "deb http://repository.spotify.com stable non-free" | sudo tee -a /etc/apt/sources.list > /dev/null
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4E9CFF4E
 
@@ -7,6 +7,8 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4E9CFF4E
 sudo apt-get update
 
 packages="build-essential
+vim
+git
 bless
 zenmap
 nmap
@@ -36,36 +38,36 @@ dstat
 slurm
 irssi"
 
-echo "Installing packages"
+echo "#### Installing packages ####"
 sudo apt-get install ${packages}
 
 # Div settings
-echo "Enabling UFC - Default deny"
+echo "#### Enabling UFC - Default deny ####"
 sudo ufw default deny
 sudo ufw enable
 
 
 # Restore placement of window buttons
-echo "Restoring placement of window buttons"
+echo "#### Restoring placement of window buttons ####"
 gconftool-2 --set "/apps/metacity/general/button_layout" \
     --type string ":minimize,maximize,close"
 
 # No event sounds
-echo "Disabling event sounds"
+echo "#### Disabling event sounds ####"
 gconftool-2 --set "/desktop/gnome/sound/event_sounds" \
     --type boolean "false"
 
 # gnome-terminal: no scrollbar
-echo "Disabling terminal scrollbar"
+echo "#### Disabling terminal scrollbar ####"
 gconftool-2 --set "/apps/gnome-terminal/profiles/Default/scrollbar_position" \
     --type string "hidden"
 
 # terminator as default terminal 
-echo "Setting Terminator as default terminal"
+echo "#### Setting Terminator as default terminal ####"
 gconftool --type string --set /desktop/gnome/applications/terminal/exec terminator
 
 # Adding ~/bin to $PATH
-echo "Setting $PATH"
+echo "#### Setting "$PATH" ####"
 export PATH=$PATH:/home/truls/bin
 
 
