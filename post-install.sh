@@ -7,6 +7,8 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4E9CFF4E
 sudo apt-get update
 
 packages="build-essential
+network-manager-openvpn-gnome
+myunity
 vim
 git
 bless
