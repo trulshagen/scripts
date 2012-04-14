@@ -22,6 +22,7 @@ manpages-dev
 php5-cli
 python-scapy
 subversion
+p7zip
 git-core
 network-manager-vpnc
 curl
