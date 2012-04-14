@@ -23,6 +23,7 @@ php5-cli
 python-scapy
 subversion
 p7zip
+p7zip-rar
 git-core
 network-manager-vpnc
 curl
