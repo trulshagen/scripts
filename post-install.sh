@@ -11,6 +11,9 @@ network-manager-openvpn-gnome
 myunity
 vim
 git
+foremost
+tcpflow
+tcpxtract
 bless
 zenmap
 nmap
