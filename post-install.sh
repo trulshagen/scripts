@@ -11,6 +11,7 @@ network-manager-openvpn-gnome
 myunity
 vim
 git
+ipcalc
 foremost
 tcpflow
 tcpxtract
