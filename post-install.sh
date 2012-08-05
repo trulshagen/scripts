@@ -10,6 +10,7 @@ packages="build-essential
 network-manager-openvpn-gnome
 myunity
 vim
+zip
 git
 bless
 zenmap
